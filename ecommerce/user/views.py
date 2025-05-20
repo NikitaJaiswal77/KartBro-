@@ -24,5 +24,5 @@ def add_to_cart(request, product_id):
         request.session['cart'] = cart
         # Add success message for guest user
         messages.success(request, f'{product.name} has been added to your cart!')
-
+# 
     return redirect('product_list')  # Redirect to the product list or cart page
