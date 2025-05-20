@@ -1,0 +1,7 @@
+<!-- In your base template (base.html) -->
+<a href="{% url 'cart_view' %}" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1000;">
+    <button class="btn btn-primary btn-lg">
+        🛒 Cart
+        <span class="badge bg-light text-dark">{{ cart_count }}</span>
+    </button>
+</a>
